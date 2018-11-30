@@ -37,6 +37,18 @@ ol, ul {
 	list-style: none;
 }
 
+.link-button {
+	border: none;
+	background-color: #ceb888;
+	padding: 1em;
+	text-align: center;
+	font-size: 1em;
+	display: inline-block;
+	text-decoration: none;
+	margin: 1em auto;
+	width: 100%;
+}
+
 blockquote, q {
 	quotes: none;
 }
