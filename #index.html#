@@ -1,0 +1,144 @@
+<!--Will Bollock-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>William Bollock</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<span class="entity" <p>WB</p></span>
+			</divd>
+			<div class="content">
+				<div class="inner">
+					<h1>William Bollock</h1>
+					<p>Get to know me!</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#projects">Projects</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h2 class="major">Intro</h2>
+				<div  class="bolli   ><img src="images/1.jpg" alt="" /></div>
+				<p style="text-align: center; font-size: .9em;"><i>I am currently a Senior pursuing a Bachelor's in Information Technology at Florida State University.</i></p>
+
+				<p>I am a motivated individual interested in many aspects of Information Technology, from consulting to development. I chose to work during school to gain
+					as much experience as possible, alongside my degree. I've learned valuable lessons in management due to my position as IT manager for a local bartending business.
+					<br></br>
+					I've undertaken a variety of projects with a large amount of responsibility in all of them. Everything from nested if-statements in Excel spreadsheets
+					to online ordering forms, I've learned how to excecute solutions to improve a business. While my organization does not require very advanced IT skills,
+					it is a great learning experience.
+				</p>
+
+				<a href="#work"><button class="link-button"><h4>Check out my work experience!</h4></button></a>
+			</article>
+
+			<!-- Work -->
+			<article id="work">
+				<h2 class="major">Work</h2>
+				<span class="image main"><img src="images/work.JPG" alt="" /></span>
+				<h3>HelpDesk Technician - FSU College of Communication and Information</h3>
+				<p> 
+					My role as a HelpDesk Technician has allowed me to learn more about Mac OS and Bash scripting, something I normally
+					would never have undertaken. Although I strongly prefer Windows and Linux operating systems, I took on the responsibility
+					of managing MacOS adminstration and deployment of FSU's CCI college.
+				<span class="image main">
+					<br></br>
+					I ressurected the antqiuated deployment scheme into a modern, flexible deployment workflow. Using Deploy Studio, fellow HelpDesk Technicians are able to image faculty Mac computers and student computer lab systems
+					with ease. Combining Deploy Studio's workflows and an in-house bash script, my new deployment scheme vastly improved Mac deployments.
+				</p>
+				<h3>IT Manager - On the Rocks Bartending</h3>
+				<p>I began my On the Rocks career as a bartender, and worked my way up to managing 30+ employees, developing a system that is responsible for $30,000+ of event orders,
+					and handling all Gsuite and domain administration. My first task was to create a complicated Excel spreadsheet for estimating alcohol costs for clients. This tool
+					was a big success, and I utilized what tools I had, which was Excel. Today, I might have made it into a web application for portablity, but the system worked. 
+					<br></br>
+					My next large task was to revamp email adminstration. The owner of On the Rocks was paying way too much to an IT consultant for hosting email services. I took control of all the 
+					domains and handled a large email migration to Gsuite, which was a scary endeavor. I couldn't afford to lose any of the thousands of emails accured over the years. Since migrating to Gsuite,
+					I have been able to improve secruity and save On the Rocks hundrends of dollars a year. 
+					***********ADD PIC HERE***********
+					<br></br>
+					Lastly, my biggest endeavor was an online ordering form. On the Rocks has an older, and technologically slower, clientbase. What I built had to be extremely user friendly,
+					from the customer's point-of-view, and the business'. If our Office Coordinator could not easily access client's data, the system would go unused.
+
+					I built an online ordering form that is clean and responsive. 
+					***********ADD PIC HERE***********
+				</p>
+				
+
+
+				<embed src="files/Resume.pdf" type="application/pdf" width="100%" height="600px" />
+
+				<a href="#projects"><button class="link-button"><h4>Check out my personal projects!</h4></button></a>
+
+				
+				</ul>
+
+
+
+			</article>
+
+			<!-- About -->
+			<article id="projects">
+				<h2 class="major">Projects</h2>
+				<span class="image main"><img src="images/jz.jpg" alt="" /></span>
+				
+				<h3>Plex Server</h3>
+				<p>I run a personal Plex and FTP server at home. An old crpytocurrency miner, my server is currently running Windows 10 but I have large plans to switch it to Linux. Running Arch Linux on my personal laptop has provided me a lot of real-world Linux experience, particularly on the command line. </p>
+				<h3>Java Payroll Program</h3>
+				<p>One of my rolls as IT manager at On the Rocks is to pay all employees. This can mean I have to input payroll data for around 25 employees every two weeks. As with all repetitive tasks, it can be solved with computing. My Java payroll program has increased my effiency and has led to less payroll errors.</p>
+				<h3>Hyper-V Cluster</h3>
+				<p>My time at the CCI HelpDesk has allowed me invaluable experience to use equipment and resources most other students don't have avaiaible. Starting Spring 2019, I setup and managed my own Hyper-V cluster of VMs. Starting with a simple DHCP server, my VMs operate as a testing and development environment for me to use Puppet, Docker, etc. on testing machines. 
+
+				<ul class="icons">
+					<li><a href="mailto:wbollock@gmail.com" class="fa fa-envelope"><span class="label"></span></a></li>
+					<li><a href="https://www.linkedin.com/in/william-bollock-421330167/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+					<li><a href="https://github.com/wbollock" class="icon fa-github"><span class="label">GitHub</span></a></li>
+
+
+				</ul>
+			</article>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy;Copyright 2018</a></p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
