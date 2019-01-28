@@ -1649,6 +1649,6 @@ input, select, textarea {
 			opacity: 0;
 		}
 /* custom classes */
-		.bollimg { height: 100px;
-			   width: 25%;
+		.bollimg { height: 50px;
+			   width: 10%;
 		}
