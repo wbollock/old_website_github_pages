@@ -1648,3 +1648,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+/* custom classes */
+		.bollimg { height: 200px;
+			   width: 50%;
+		}
