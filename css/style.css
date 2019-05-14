@@ -4,6 +4,11 @@ html {
     scroll-behavior: smooth;
   }
 
+#about
+  {
+    margin: 0 auto;
+  }
+
 body {
     margin: 2em auto;
     max-width: 30em;
@@ -22,7 +27,6 @@ h1, h2, h3, h4, h5 {
 
 img {
     width: 70%;
-  
     padding-left:15%;
 }
 
