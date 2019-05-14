@@ -48,7 +48,7 @@ body.dark-mode {
 .sticky {
     position: fixed;
     top: 0;
-    width: 41%;
+    width: 30em;
   }
 
 
