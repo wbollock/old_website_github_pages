@@ -1,0 +1,42 @@
+/* made by Will Bollock */
+/* website design is aimed to be streamlined and self built */
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 2em auto;
+    max-width: 30em;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #444;
+    padding: 0 10px;
+
+}
+
+h1,h2,h3,h4 {
+    line-height: 1.2;
+}
+
+img {
+    width: 70%;
+  
+    padding-left:15%;
+}
+
+/* Dark Mode styles */
+body.dark-mode {
+    background: black;
+}
+.dark-mode label {
+    color: white;
+}
+.dark-mode h1 {
+    color: yellow;
+}
+.dark-mode p {
+    color: orange;
+}
+.dark-mode h1,h2,h3,h4 {
+
+}

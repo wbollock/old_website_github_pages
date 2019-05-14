@@ -1,0 +1,88 @@
+<!-- Made by Will Bollock -->
+<!-- design is meant to be streamlined, and self built-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Will Bollock's Website</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" rel="script" src="js/scripts.js" defer></script>
+    <script src="js/jquery-3.4.0.min.js"></script>
+</head>
+<!-- dark mode: -->
+<!-- https://jsfiddle.net/7Lfv0jqL/-->
+<body>
+
+    <label for="mode" style="float:right"><input id="mode" type="checkbox"> Dark Mode</label>
+
+    <h1>William Edward Bollock</h1>
+    <br>
+    <h3>Current Goals:</h3><p><em>Graduate School; Exploring Linux</em></p>
+    <p>My Last Git Push:</p>
+    <p>Most recent update to this website:</p> <p id="lastModified"></p>
+    <!--use JS here to get last updated time of last git push-->
+    <br>
+    <p>I am currently a senior Information Technology student at FSU. I have developed a large
+        passion for Linux, at work and at home. I have strongly expanded my technical skills
+        while working at the FSU College of Communication and Information HelpDesk, while I have grown
+        my management skills while working at On the Rocks Bartending.
+    </p>
+    <p>Here's a link to my <a target="_blank" rel="noopener noreferrer" href="https://github.com/wbollock">Github</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/william-bollock-421330167/">Linkedin</a>.</p>
+    <h4 style="display:inline;">Link to Sections:  </h4><a href="#section1">Linux</a> <a href="#section2"> Project Management </a> <a href="#section3"> Side Projects </a>
+    <br>
+    <div id="section1">
+        <h2>Linux</h2>
+        <!-- TODO: use typosaur.us to fix spelling mistakes-->
+        <span><img src="img/arch.png" alt="Arch" /></span>
+        <!-- TODO: check image alignment-->
+        <h5>Arch</h5>
+        <p>Running Arch Linux as my main OS has been a phenomal learning experience. 
+        Having to manually install and configure every package on my machine has given me an
+        incredible level of control. Everything from configuring a USB device to setting up a printer
+        can turn into a learning experience, whether you like it or not.
+        </p>
+        <br>
+        <span><img src="img/sssd.png" alt="SSSD" /></span>
+        <h5>SSSD</h5>
+        <p>SSSD, or System Security Services Daemon, is a way to incorporate Active Directory logons into Linux servers, also known as Single Sign-On.  Setting up SSSD was my first major
+            Linux-related project for work. I quickly realized the importance of documentation in a large project, and attempted to keep the scope
+        of the original project in mind. I wrote a Bash script (<a target="_blank" rel="noopener noreferrer" href="https://github.com/wbollock/CCIAutoEmail">a language I often rely on...</a>)
+    to automate the installation process, the removal of LDAP, and a host of other verifications and checks. A link to the Bash script is <a target="_blank" rel="noopener noreferrer" href="    https://github.com/wbollock/cciSSSD_AutoInstall/blob/master/runSSSD.sh">here</a>.</p>
+        
+
+
+    
+    </div>
+    <br>
+    <div id="section2">
+        <h2>Project Management</h2>
+        <!-- TODO: side by side -->
+        <img src="img/otrquote.png" alt="OTR Quote"/>
+        <img src="img/gsuite.png" alt="G Suite"/>
+        <h5>On the Rocks Bartending</h5>
+        <p>
+        On the less technical side, I am the manager of 30+ bartenders at a local event bartending company, <a target="_blank" rel="noopener noreferrer" href="https://www.ontherocksbartending.net">On the Rocks</a>.
+        While in this role, I managed expensive and large events for over two years. These required proper planning, communication, and execution. My technical roles transistioned towards
+        easy G-Suite Administration, domain name upkeep, and adding features to an <a target="_blank" rel="noopener noreferrer" href="https://www.ontherocksbartending.net/schedule-an-event-today">online ordering form</a>.
+    </p>
+
+
+    </div>
+    <br>
+    <div id="section3">
+        <h2>Side Projects</h2>
+
+        <span><img src="img/plex.png" alt="Plex Server"/></span>
+        <h5>Plex Server</h5>
+				<p>I run a personal Plex and FTP server at home. 
+                    An old crpytocurrency miner, my server is currently running Ubuntu. I've also installed Pihole and Home Assistant (through Docker) on a spare
+                Raspberry Pi. </p>
+                    <br>
+				<span><img src="img/payroll.png" alt="OTR payroll program"/></span>
+				<h5>Java Payroll Program</h5>
+				<p>I wrote a small Java program to test advanced Java techniques, like
+                    encapsulation, inteface, abstract methods, and polmorphism, that also
+                    helps me pay 30+ employees every two weeks.
+                </p>
+    </div>
+</body>
