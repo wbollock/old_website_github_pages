@@ -14,9 +14,11 @@ body {
 
 }
 
-h1,h2,h3,h4 {
+h1, h2, h3, h4, h5 {
     line-height: 1.2;
+    color:black;
 }
+
 
 img {
     width: 70%;
@@ -32,17 +34,32 @@ body.dark-mode {
 .dark-mode label {
     color: white;
 }
+/* issues when having them all on one line
+works well seperated */
 .dark-mode h1 {
     color: yellow;
 }
+.dark-mode h2 {
+  color: yellow;
+}
+.dark-mode h3 {
+  color: yellow;
+}
+.dark-mode h4 {
+  color: yellow;
+}
+.dark-mode h5 {
+  color: yellow;
+}
 .dark-mode p {
-    color: orange;
+    
+    color:white;
 }
-/*
-.dark-mode h1,h2,h3,h4 {
 
+.dark-mode a {
+  color: orange;
 }
-*/
+
 
 
 .sticky {
