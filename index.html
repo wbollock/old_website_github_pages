@@ -103,7 +103,12 @@
 </body>
 
 <script>
-	var scroll = new SmoothScroll('a[href*="#"]');
+	var scroll = new SmoothScroll('a[href*="#"]', {
+        //speed
+        speed: 500,
+        easing: 'linear'
+    });
+
 </script>
 
 </html>
