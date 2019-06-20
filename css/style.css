@@ -41,19 +41,19 @@ body.dark-mode {
 /* issues when having them all on one line
 works well seperated */
 .dark-mode h1 {
-    color: yellow;
+    color:#E9967A;
 }
 .dark-mode h2 {
-  color: yellow;
+  color: #E9967A;
 }
 .dark-mode h3 {
-  color: yellow;
+  color: #E9967A;
 }
 .dark-mode h4 {
-  color: yellow;
+  color: #E9967A;
 }
 .dark-mode h5 {
-  color: yellow;
+  color: #E9967A;
 }
 .dark-mode p {
     
@@ -61,7 +61,7 @@ works well seperated */
 }
 
 .dark-mode a {
-  color: orange;
+  color: #98FB98;
 }
 
 
