@@ -1,0 +1,166 @@
+<!-- Made by Will Bollock -->
+<!-- design is meant to be streamlined, and self built-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Will Bollock's Website</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" rel="script" src="js/scripts.js" defer></script>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142539799-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142539799-1');
+    </script>
+</head>
+<!-- dark mode: -->
+<!-- https://jsfiddle.net/7Lfv0jqL/-->
+<body>
+    <div id="about">
+            <div id="navbar">
+                    <a class="active" href="#about">About</a>
+                    <a href="#section1">Linux</a>
+                    <a href="#section2">Project Management</a>
+                    <a href="#section3">Side Projects</a>
+                </div>
+           
+    <label for="mode" style="float:right"><input id="mode" type="checkbox"> Dark Mode</label>
+   
+           
+    
+
+    <h1>William Bollock</h1>
+    <table style="width:100%">
+        <tr>
+            <td>
+            <button class="accordion">Headshot</button>
+            <div class="panel">
+                    <img src="img/fullbody.jpg" alt="Full Body Headshot" />
+            </div>
+            </td>
+
+            <td>
+            <button class="accordion">Resume</button>
+            <div class="panel">
+                    <embed src="img/resume.pdf" width="500" height="375" 
+                    type="application/pdf">
+            </div>
+            </td>
+
+        </tr>
+    </table>
+
+    <br>
+    <h3 style="display:inline-block;">Current Goals:</h3><p style="display:inline-block;"><strong> &nbsp; Graduate School and Linux System Administration</strong></p>
+    <p>Email: <a href="mailto:wbollock@gmail.com">wbollock at gmail dot com</a></p>
+    <p style="display:inline-block;">Most recent update to this website:</p><em> <p style="display:inline-block;" id="lastModified"></p></em>
+    <!--use JS here to get last updated time of last git push-->
+    <h2>About Me</h2>
+
+    <p>I am currently a senior Information Technology student at FSU. I have developed a large
+        passion for Linux, at work and at home. I have strongly expanded my technical skills
+        while working at the FSU College of Communication and Information HelpDesk, while I have grown
+        my management skills while working at On the Rocks Bartending.
+        <br>
+        My current plans are to attend graduate school at FSU in Spring 2019. I am still open to job opportunities, specifically
+        dealing with Linux and system administration.
+    </p>
+    <p>Here's a link to my <span class="fab fa-github"></span><a target="_blank" rel="noopener noreferrer" href="https://github.com/wbollock">Github</a> and <span class="fab fa-linkedin"></span><a  target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/william-bollock-421330167/">LinkedIn</a>.</p>
+</div>
+    <h2>Education</h2>
+    <p>I attended Florida State University, and will graduate/graduated December 2019. I received a Bachelor's of Science in Information Technology. During my time at Florida State,
+    I was active in the Community Outreach Group, a club which specialized in community service involving technology. I was the Webmaster during the Fall 2019 semester. Lastly, I was
+    apart of the Honors College during my stay at Florida State, and recieved a scholarship to study abroad.
+    </p>
+
+
+
+    <p><i>Note that this site has Google Analytics so I can track user traffic. Please keep uBlock Origin on if you don't wish to be tracked.</i></p>
+   
+    <div id="section1">
+            <br>
+        <h2>Linux</h2>
+        
+        <span><img src="img/arch.png" alt="Arch" /></span>
+        
+        <h5>Arch</h5>
+        <p>Running Arch Linux as my main OS has been a phenomenal learning experience. 
+        Having to manually install and configure every package on my machine has given me an
+        incredible level of control. Everything from configuring a USB device to setting up a printer
+        can turn into a learning experience, whether you like it or not.
+        </p>
+        <br>
+        <span><img src="img/sssd.png" alt="SSSD" /></span>
+        <h5>SSSD</h5>
+        <p>SSSD, or System Security Services Daemon, is a way to incorporate Active Directory logons into Linux servers, also known as Single Sign-On.  Setting up SSSD was my first major
+            Linux related project for work. I quickly realized the importance of documentation in a large project, and attempted to keep the scope
+        of the original project in mind. I wrote a Bash script (<a target="_blank" rel="noopener noreferrer" href="https://github.com/wbollock/CCIAutoEmail">a language I often rely on...</a>)
+    to automate the installation process, the removal of LDAP, and a host of other verifications and checks. A link to the Bash script is <a target="_blank" rel="noopener noreferrer" href="https://github.com/wbollock/cciSSSD_AutoInstall/blob/master/sssd.sh">here</a>.</p>
+        
+
+
+    
+    </div>
+    <br>
+    <div id="section2">
+            <br>
+        <h2>Project Management</h2>
+        <!-- TODO: side by side -->
+        <img src="img/otrquote.png" alt="OTR Quote"/>
+        <img src="img/gsuite.png" alt="G Suite"/>
+        <h5>On the Rocks Bartending</h5>
+        <p>
+        On the less technical side, I am the manager of 30+ bartenders at a local event bartending company, <a target="_blank" rel="noopener noreferrer" href="https://www.ontherocksbartending.net">On the Rocks</a>.
+        While in this role, I managed expensive and large events for over two years. These required proper planning, communication, and execution. My technical roles transitioned towards 
+        G-Suite Administration, domain name upkeep, and adding features to an <a target="_blank" rel="noopener noreferrer" href="https://www.ontherocksbartending.net/schedule-an-event-today">online ordering form</a>.
+    </p>
+
+
+    </div>
+    <br>
+    <div id="section3">
+        <br>
+        <h2>Side Projects</h2>
+            <span><img src="img/topology.png" alt="HelpDesk Server"/></span>
+            <h5>HelpDesk Server</h5>
+                <p>During my time at the CCI IT HelpDesk, I took on the task of setting up a development server rack. I started from the basics,
+                    racking and unracking old components, swapping out RAM and NICs, and cable management. I learned an incredible amount about Windows Server,
+                    including Powershell administration, Active Directory, group policy, failover clustering, etc. This was my introduction to enterprise networking,
+                    creating VLANSs and setting up NIC teaming. Above and below are diagrams from this experience.
+                </p>
+            <span><img src="img/rack.png" alt="Server Rack"/></span>
+            <br>
+            <span><img src="img/plex.png" alt="Plex Server"/></span>
+            <h5>Plex Server</h5>
+				<p>I run a personal Plex and FTP server at home. 
+                    An old cryptocurrency miner, my server is currently running Ubuntu. I've also installed Pihole and Home Assistant (through Docker) on a spare
+                Raspberry Pi. </p>
+                    <br>
+				<span><img src="img/payroll.png" alt="OTR payroll program"/></span>
+				<h5>Java Payroll Program</h5>
+				<p>I wrote a small Java program to test advanced Java techniques, like
+                    encapsulation, interface, abstract methods, and polymorphism, that also
+                    helps me pay 30+ employees every two weeks.
+                </p>
+        
+    </div>
+   
+</body>
+
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]', {
+        //speed
+        speed: 500,
+        easing: 'linear'
+    });
+
+</script>
+
+</html>
