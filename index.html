@@ -11,6 +11,30 @@
 </head>
     
     <body>
+            <!--Start of code submit form-->
             <label for="mode" style="float:right"><input id="mode" type="checkbox"> Dark Mode</label>
-            
+            <form action="/index_process.php" method="get">
+                <h3>Fill in the following code to proceed:</h3>
+                <code>&lt!DOCTYPE</code>
+                <input type="text" name="code1">
+                <code>&gt</code>
+                <br>
+                <code>&lthead&gt</code>
+                <br>
+                <code>&ltmeta author=</code>
+                <input type="text" name="code2">
+                <code>&gt</code>
+                <br>
+                <code>&lttitle&gtWill Bollock's Website&lt/title&gt</code>
+                <br>
+                <code>&ltform action="/index_process.html"&gt</code>
+                <br>
+                <code>&lt!-- Hint: look at the Dark Mode element --&gt</code>
+                <code>&ltlabel&gt&ltinput id="mode" type=</code>
+                <input type="text" name="code3">
+                <code>&gt Dark Mode&lt/label&gt</code>
+                
+                <br><br>
+                <input type="submit" value="Run">
+              </form>
     </body>
