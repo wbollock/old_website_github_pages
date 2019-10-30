@@ -6,6 +6,7 @@
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
         <script type="text/javascript" rel="script" src="js/scripts.js" defer></script>
         <script src="js/jquery-3.4.0.min.js"></script>
+</head>
         
 <body>
         <label for="mode" style="float:right"><input id="mode" type="checkbox"> Dark Mode</label>
@@ -24,11 +25,7 @@
         
         <button type="button" onclick="PHP7()">PHP7</button>
         <button type="button" onclick="CLEAR()">Clear</button>
-        <div id="php7" style="display:none">
-                Incorrect! PHP5 didn't require typecasting. The correct PHP7 code would be:
-                <br>
-                <code>$pageErrors[$field] = (string) $err;</code>
-        </div>
+        
 
         <div id="php5" style="display:none">
                         Correct! PHP5 didn't require typecasting, so functions like <code>toStr()</code> were common.
@@ -36,6 +33,12 @@
                         <br>
                         <code>$pageErrors[$field] = (string) $err;</code>
                 </div>
+
+        <div id="php7" style="display:none">
+                                Incorrect! PHP5 didn't require typecasting. The correct PHP7 code would be:
+                                <br>
+                                <code>$pageErrors[$field] = (string) $err;</code>
+        </div>
 
         <script type="text/javascript">
                 function PHP5() {
@@ -49,6 +52,28 @@
                         document.getElementById('php7').style.display='none'
                 }       
                 </script>
-        </head>
+
+        <p>Anyway, onto OpenBiblio. I used a tool called <a href="https://github.com/Alexia/php7mar">PHP 7 MAR (Migration Assistant Report).</a></p>
+        <p>It looked like this:</p>
+        <img src="img/php7mar.png" alt="PHP 7 to MAR" />
+        <p>This tool was fantastic. Without it, I'd have to debug via the web browser, waiting for HTTP 500 errors and debugging from Apache logs.</p>
+        <p>Thus, I painstakingly went function by function and changed them to PHP7 equivleants.</p>
+
+        <h3>Results</h3>
+        <p>Finally, I was able to view my webpage and work on testing.</p>
+        <p>Here's a photo of the interface:</p>
+        <img src="img/interface.png" alt="PHP 7 to MAR" />
+        <p>I worked with the Libranian and assistants to debug every feature. For example, the system would "crash" when entering an invalid barcode.</p>
+        <p>My fix was primitive, but I didn't want to modify too much of the original code:</p>
+        <img src="img/barcode.png" alt="Barcode error" />
+        <p>As you can see, this isn't an elegant solution, but it's better than a blank page.</p>
+        <p>Anyways, OpenBiblio is still a work in progress. As I find bugs, I push fixes to the Github page.</p>
+        <br>
+        <hr>
+        <p>To continue my career portfolio journey, please click the button below to see my interactive resume!</p>
+        <form action="resume.html">
+                <input type="submit" value="Interactive Resume" />
+            </form>
+        
 </body>
 </html>
