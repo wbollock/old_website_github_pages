@@ -3,13 +3,52 @@
 <head>
         <meta charset="UTF-8">
         <title>Will Bollock's Website</title>
-</head>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <script type="text/javascript" rel="script" src="js/scripts.js" defer></script>
+        <script src="js/jquery-3.4.0.min.js"></script>
+        
 <body>
+        <label for="mode" style="float:right"><input id="mode" type="checkbox"> Dark Mode</label>
         <h3>My Experience</h3>
         <p>Thank you for completing my coding challenge! Sadly, Github Pages can't run PHP, so I can't verify your
                 answers. Let's hope they're correct.
         </p>
         <h3>OpenBiblio</h3>
-        <p>Placeholder for OB discussion. Include PHP7MAR, functions, differences, etc.</p>
+        <p>To give you an example of my programming experience, I will be walking you through my work on OpenBiblio for PHP7.0.</p>
+        <p>OpenBiblio is a library system that is free and open source. The web application was outdated, and ran only on PHP5 and an outdated MySQL version.</p>
+        <p>My work is here, <a href="https://github.com/wbollock/openbiblio_7.2_php7">released free and open source on Github</a>, and is used by FSU's College of Communication and Information.</p>
+        <p>First, a quiz. Is the following code valid in PHP5 or PHP7?</p>
+        <code>$pageErrors[$field] = $err->toStr();</code>
+        <br>
+        <button type="button" onclick="PHP5()">PHP5</button>
+        
+        <button type="button" onclick="PHP7()">PHP7</button>
+        <button type="button" onclick="CLEAR()">Clear</button>
+        <div id="php7" style="display:none">
+                Incorrect! PHP5 didn't require typecasting. The correct PHP7 code would be:
+                <br>
+                <code>$pageErrors[$field] = (string) $err;</code>
+        </div>
+
+        <div id="php5" style="display:none">
+                        Correct! PHP5 didn't require typecasting, so functions like <code>toStr()</code> were common.
+                        However, the correct PHP7 code is:
+                        <br>
+                        <code>$pageErrors[$field] = (string) $err;</code>
+                </div>
+
+        <script type="text/javascript">
+                function PHP5() {
+                        document.getElementById('php5').style.display='block'
+                }
+                function PHP7() {
+                        document.getElementById('php7').style.display='block'
+                }
+                function CLEAR() {
+                        document.getElementById('php5').style.display='none'
+                        document.getElementById('php7').style.display='none'
+                }       
+                </script>
+        </head>
 </body>
 </html>
