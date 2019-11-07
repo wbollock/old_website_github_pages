@@ -71,6 +71,51 @@
         <p>Anyways, OpenBiblio is still a work in progress. As I find bugs, I push fixes to the Github page.</p>
         <br>
         <hr>
+        <h3>CCI HelpDesk Development Server</h3>
+        <p>Another one of my projects is setting up an entire development environment for FSU's College of Communication and Information.
+                 I started from racking servers and swapping RAM, to live-migrating Active Directory.</p>
+                 <img src="img/server.png" alt="Server Rack" />
+                 <p>Our server rack is mainly composed of used Dell R620s. We also have a SAN with 10TB in RAID 5.  </p>
+                 <p>My contribution to this project was setting everything up for my supervisors and colleagues to use. I acted as the sole system administrator in this Windows Server 2016 environment.</p>
+                 <img src="img/aduc.png" alt="Active Directory" />
+                 <h4>Challenges</h4>
+                 <p>The largest challenge I faced was setting up a Failover Cluster, or allowing Virtual Machines (Hyper-V) to be Highly Available.</p>
+                 <p>I spent months of the issue, and no matter what I did, the cluster would have weird issues, such as nodes failing, and the cluster storage was completely unreachable.</p>
+                 <img src="img/luns.png" alt="LUNs" />
+                 <p>What I did to debug:</p>
+                 <ol>
+                         <li>Completely wiped and re-imaged one server that was always having problems</li>
+                         <li>Re-made the cluster 10+ times</li>
+                         <li>Wiped and re-made all LUNs</li>
+                         <li>Re-configured ISCSI initiators and targets multiple times</li>
+                         <li>Setup a VLAN just for iSCSI traffic</li>
+                         <li>Went past page two of Google Search Results (it's a scary place)</li>
+                 </ol>
+                 <p>This was completed while I handled my HelpDesk technician responsibilities. After two months, I found the solution hidden in a 2015 post on Microsoft's forums.</p>
+                 <p>Can you guess? Click below to reveal the answer.</p>
+                 <button type="button" onclick="SOLUTION()">Solution</button>
+                 <button type="button" onclick="CLEAR2()">Clear</button>
+                 <div id="solution" style="display:none">
+                                <br>
+                                <hr>
+                                It was <b>Active Directory</b>. Two of the hosts in the cluster were Domain Controllers, and as soon as I demoted them, everything worked flawlessly. This is when I did an Active Directory migration from physical to virtual servers.
+                                <br>
+                                <hr>
+                        </div>
+
+                        <script type="text/javascript">
+                                function SOLUTION() {
+                                        document.getElementById('solution').style.display='block'
+                                }
+                                
+                                function CLEAR2() {
+                                        document.getElementById('solution').style.display='none'
+                                        
+                                }       
+                                </script>
+        <p>As of this writing, I'm still doing work on our server rack. My next goal is to setup Grafana and Prometheus for server monitoring.</p>
+        <img src="img/grafana.jpg" alt="Grafana Dashboard" />
+        <hr>
         <p>To continue my career portfolio journey, please click the button below to see my interactive resume!</p>
         <form action="resume.html">
                 <input type="submit" value="Interactive Resume" />
