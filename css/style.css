@@ -118,3 +118,7 @@ works well seperated */
   display: none;
   overflow: hidden;
 }
+#fullbody {
+  width: 20%;
+  align-content: center;
+}
