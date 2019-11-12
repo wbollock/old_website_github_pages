@@ -64,6 +64,10 @@ works well seperated */
   color: #98FB98;
 }
 
+.dark-mode code {
+  color: white;
+}
+
 
 
 .sticky {
